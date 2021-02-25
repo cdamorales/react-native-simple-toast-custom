@@ -18,7 +18,7 @@ export default {
   show(message, duration, viewControllerBlacklist) {
     RCTToast.show(
       message,
-      duration === undefined ? RCTToast.SHORT : Platform.OS === ios ? duration / 1000 : duration,
+      duration === undefined ? RCTToast.SHORT : Platform.OS === 'ios' ? duration / 1000 : duration,
       viewControllerBlacklist
     );
   },
